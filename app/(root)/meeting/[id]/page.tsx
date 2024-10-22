@@ -1,5 +1,5 @@
-const MeetingRoom = ({ params }: { params: { id: string } }) => {
-    return (<div className="text-white">Meeting Room Number {params.id}</div>);
+const MeetingRoom = () => {
+    return (<div className="text-white">Meeting Room Number </div>);
 }
 
 export default MeetingRoom;
