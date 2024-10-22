@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 
 
@@ -15,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-dark-2">
         {children}
       </body>
     </html>
