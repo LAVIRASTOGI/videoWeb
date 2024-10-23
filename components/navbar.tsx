@@ -1,7 +1,8 @@
 import React from 'react'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from 'next/image'
 import MobileNav from './mobileNav'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 
 
 function Navbar() {
@@ -14,10 +15,10 @@ function Navbar() {
             </div>
             <div className='flex gap-4'>
                 {/* clerk */}
-                <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
+                <SignedIn>
+                    <UserButton />
+                </SignedIn>
+
                 {/* mobile Nav */}
                 <MobileNav />
             </div>
