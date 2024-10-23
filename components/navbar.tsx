@@ -2,7 +2,7 @@ import React from 'react'
 // import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from 'next/image'
 import MobileNav from './mobileNav'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+import { SignedIn, UserButton } from '@clerk/nextjs'
 
 
 function Navbar() {
