@@ -16,7 +16,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        layout: {
+          socialButtonsVariant: "iconButton",
+          logoImageUrl: "/icons/video.jpg",
+        },
+        variables: {
+          colorText: "#fff",
+          colorPrimary: "#0E78F9",
+          colorBackground: "#1C1F2E",
+          colorInputBackground: "#252A41",
+          colorInputText: "#fff",
+        },
+      }}
+    >
       <html lang="en">
         <body className="bg-dark-2 text-dark-white">
 
