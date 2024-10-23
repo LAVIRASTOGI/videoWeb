@@ -1,5 +1,9 @@
+'use client'
+import { useParams } from "next/navigation";
+
 const MeetingRoom = () => {
-    return (<div className="text-white">Meeting Room Number </div>);
+    const { id } = useParams();
+    return (<div>Meeting Room Number {id}</div>);
 }
 
 export default MeetingRoom;
