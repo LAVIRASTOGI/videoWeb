@@ -1,6 +1,8 @@
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from 'next/image'
+import MobileNav from './mobileNav'
+
 
 function Navbar() {
     return (
@@ -10,11 +12,14 @@ function Navbar() {
                 <Image src={'/icons/video.jpg'} alt='TalentBridge' height={40} width={40} />
                 <span className='text-lg'>TalentBridge</span>
             </div>
-            <div>
+            <div className='flex gap-4'>
+                {/* clerk */}
                 <Avatar>
                     <AvatarImage src="https://github.com/shadcn.png" />
                     <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
+                {/* mobile Nav */}
+                <MobileNav />
             </div>
         </div>
     )
