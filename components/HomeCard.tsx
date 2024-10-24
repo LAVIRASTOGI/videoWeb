@@ -13,7 +13,7 @@ interface HeroCardProps {
 
 }
 
-const HeroCard: React.FC<HeroCardProps> = ({ title, description, icon, id, backgroundColor, handleClick }) => {
+const HeroCard: React.FC<HeroCardProps> = ({ title, description, icon, id, backgroundColor }) => {
     return (
         <div key={id} className={cn('flex flex-col justify-between w-full min-h-64 p-4 rounded-2xl cursor-pointer', backgroundColor)}>
             <div className='glassmorphism p-3 w-12 rounded-xl'
