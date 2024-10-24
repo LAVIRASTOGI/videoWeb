@@ -1,4 +1,5 @@
 
+import MeetingTemplate from '@/components/meetingtemplate';
 import React from 'react'
 
 function Home() {
@@ -16,13 +17,14 @@ function Home() {
                         <h1 className="glassmorphism max-w-[273px] rounded p-2 text-center text-base font-normal mx-auto">
                             Upcoming Meeting at: 12:30 PM
                         </h1>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-4 backdrop-blur-lg items-center p-4">
                             <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
                             <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
                         </div>
                     </div></div>
 
             </div>
+            <MeetingTemplate />
         </div>
     )
 }
