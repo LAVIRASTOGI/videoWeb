@@ -8,6 +8,8 @@ import HeroCard from './HomeCard'
 function MeetingTemplate() {
     // const router = useRouter();
     // const [meetingState, setMeetingState] = useState<string>('');
+
+
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
             {
@@ -16,7 +18,7 @@ function MeetingTemplate() {
                         description={item.descrption}
                         icon={item.icon}
                         id={item.id}
-                        backgroundColor={item.color}
+                        backgroundColor={item.id === 1 ? 'bg-orange-1' : item.id === 2 ? 'bg-blue-1' : 'bg-purple-1'}
                     // handleClick={() => setMeetingState(item.meeting)}
                     />)
 

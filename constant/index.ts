@@ -41,7 +41,6 @@ export const meetingTemplate = [
     icon: "/icons/add-meeting.svg",
     title: "New Meeting",
     descrption: "Setup a new recording",
-    color: "bg-orange-1",
     meeting: "isInstantMeeting",
   },
   {
@@ -49,7 +48,6 @@ export const meetingTemplate = [
     icon: "/icons/join-meeting.svg",
     title: "Join Meeting",
     descrption: "via invitation link",
-    color: "bg-blue-1",
     meeting: "isJoiningMeeting",
   },
   {
@@ -57,7 +55,6 @@ export const meetingTemplate = [
     icon: "/icons/schedule.svg",
     title: "Schedule Meeting",
     descrption: "Plan your meeting",
-    color: "bg-purple-1",
     meeting: "isSchedulingMeeting",
   },
 ];
